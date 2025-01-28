@@ -1,0 +1,388 @@
+.container {
+    display: grid;
+}
+
+@media screen and (min-width: 578px) {
+    .container {  
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8 , auto);
+        
+        grid-template-areas:
+          "header header"
+          "mobile mobile"
+          "keyboard game"
+          "tv tv"
+          "twitter cd"
+          "lab cd"
+          "popular popular"
+          "footer footer";
+      }
+      
+      .header { grid-area: header; }
+      .header h1{
+        font-size: 40px;
+      }
+      .header a,span{
+        font-size: 20px;
+      }
+      
+      .mobile { grid-area: mobile; display: flex; align-items: center;}
+      .mobile img {
+       width: 30%;
+        }
+      .mobile h2{
+         text-align: left;
+         margin-top: 10px;
+         margin-bottom: 20px;
+         font-family: Arvo, sans-serif;
+         font-size: 22px;
+         line-height: 32px;
+         font-weight: 400;
+        }
+      .mobile p{
+         font-size: 10px;
+    
+        }
+      .mobile .left{
+        margin-top: 10px;
+        margin-bottom: 20px;
+       font-family: Arvo, sans-serif;
+       font-size: 22px;
+       line-height: 32px;
+       font-weight: 400;
+       }
+      .keyboard { grid-area: keyboard; }
+      .keyboard h2{
+        text-align: center;
+        font-size: 20px;
+        
+      }
+      .keyboard img{
+        height:40%;
+        width: 100%;
+        padding-bottom: 40px;
+      }
+      
+      .game { grid-area: game; }
+      .game h2{
+        font-size: 30px;
+        margin-top: 0;
+      }
+      .game img{
+        height: auto;
+        
+      }
+      
+      .tv { grid-area: tv; display: flex; gap: 20px; padding-bottom: 0; }
+      .left { width: 50%;}
+      .right { width: 50%;}
+      .tv .right p{
+        font-size: 15px;
+      }
+      .tv .right a{
+        padding-top: 0;
+      }
+      .tv .left img{
+        margin-top: 20px;
+      }
+  
+      .cd { grid-area: cd; }
+      .cd h2{
+        font-size: 25px;
+       }
+      .cd p{
+        font-size: 20px;
+       }
+       .cd .bagde {
+         font-size: 20px;
+        }
+        .cd img{
+          height: 50%;
+        }
+      
+      
+      .twitter { grid-area: twitter; }
+
+      .twitter .circle{
+
+        --width:70% !important
+      }
+      .twitter  img{
+        width: 70%;
+      }
+      .twitter h2{
+        font-size: 20px;
+      }
+      .twitter img{
+        height: 50%;
+      }
+      
+      .lab { grid-area: lab; }
+      .lab h2{
+        font-size: 20px;
+      }
+      .item .lab .imgs{
+        height: 80%;
+      }
+      
+      .popular { grid-area: popular; }
+      .popular h2{
+        font-size: 20px;
+      }
+      
+      .footer { grid-area: footer; }
+      .footer h2{
+        font-size: 25px;
+        margin-left: 20%;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-weight: 400;
+        
+      }
+      .footer img{
+        height: 60%;
+        width: 25%;
+        margin-right: 70%;
+        
+      }
+      
+}
+
+@media screen and (min-width: 992px) {
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        
+        grid-template-areas:
+          "mobile mobile header header"
+          "keyboard tv tv cd"
+          "game lab lab cd"
+          "twitter popular footer footer";
+      }
+      .mobile { grid-area: mobile; display: flex; align-items: center;}
+      .mobile img {
+       width: 50%;
+        }
+      .mobile h2{
+         text-align: left;
+        }
+      .mobile p{
+         font-size: 10px;
+    
+        }
+      .mobile .left{
+        margin-top: 10px;
+        margin-bottom: 20px;
+       font-family: Arvo, sans-serif;
+       font-size: 22px;
+       line-height: 32px;
+       font-weight: 400;
+       }
+      
+      
+      
+      .header { grid-area: header; }
+      .header span,h1,a{
+        font-size: 10px;
+      }
+      
+      .keyboard { grid-area: keyboard; }
+      .keyboard h2{
+        text-align: center;
+        font-size: 20px;
+        
+      }
+      .keyboard img{
+        height:60%;
+        width: 100%;
+      }
+      .tv { grid-area: tv; display: flex; gap: 20px; padding-bottom: 0; }
+      .tv .left { width: 50%;
+      
+      }
+      .tn .right { width: 50%;}
+      .tv .right p{
+        font-size: 15px;
+      }
+      .tv .right a{
+        padding-top: 0;
+      }
+      .tv .left img{
+        margin-top: 100px;
+        margin-right: 40px;
+       
+       
+        
+      }
+      .tv .left span{
+        padding-bottom: 10px;
+      }
+      
+      
+      .cd { grid-area: cd; }
+      .cd h2{
+        font-size: 30px;
+      }
+      .cd p{
+        font-size: 20px;
+      }
+      .cd .bagde {
+        font-size: 20px;
+      }
+      
+      
+      .game { grid-area: game; }
+      .game h2{
+        font-size: 30px;
+        margin-top: 0;
+      }
+      .game img{
+        height: auto;
+        
+      }
+      
+      
+      .lab { grid-area: lab; }
+      .lab h2{
+        font-size: 20px;
+      }
+      .item .lab .imgs{
+        height: 80%;
+      }
+      
+      .footer { grid-area: footer; display: flex;gap: 50px ; align-items: center; }
+      .footer img {
+        width: 50%;
+      }
+      .footer h2{
+        font-size: 25px;
+      }
+      .footer img{
+        width: 30%;
+      }
+      
+      .twitter { grid-area: twitter; }
+      .twitter  img{
+        width: 70%;
+      }
+      .twitter h2{
+        font-size: 20px;
+      }
+      
+      .popular { grid-area: popular; }
+      .popular h2{
+        font-size: 20px;
+      }
+      
+}
+
+@media screen and (min-width: 1400px) {
+  .container { 
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(4, auto) ;
+    
+    grid-template-areas:
+      "mobile mobile header header"
+      "keyboard tv tv cd"
+      "game lab lab cd"
+      "twitter popular footer footer";
+  }
+  
+  
+  .mobile { grid-area: mobile; display: flex; align-items: center;}
+  .mobile img {
+    width: 50%;
+   }
+  .mobile h2{
+    text-align: left;
+  }
+  .mobile p{
+    font-size: 10px;
+    
+  }
+  .mobile .left{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  
+  .header { grid-area: header; }
+  .header span,h1,a{
+    font-size: 10px;
+  }
+  
+  .keyboard { grid-area: keyboard;}
+  .keyboard h2{
+    text-align: center;
+    font-size: 30px;
+    
+  }
+  
+  .tv { grid-area: tv; display: flex; gap: 20px; padding-bottom: 0; }
+      .left { width: 50%;}
+      .right { width: 50%;}
+      .tv .right p{
+        font-size: 15px;
+      }
+      .tv .right a{
+        padding-top: 0;
+      }
+      .tv .left img{
+        margin-top: 20px;
+      }
+  
+  .cd { grid-area: cd; }
+  .cd h2{
+    font-size: 30px;
+  }
+  .cd p{
+    font-size: 20px;
+  }
+  .cd .bagde {
+    font-size: 20px;
+  }
+  
+  .game { grid-area: game; }
+  .game h2{
+    font-size: 20px;
+  }
+  
+  .lab { grid-area: lab; }
+  .lab h2{
+    font-size: 20px;
+  }
+  
+  .twitter { grid-area: twitter; }
+  
+  .twitter  img{
+    width: 70%;
+  }
+  .twitter h2{
+    font-size: 20px;
+  }
+  
+  .popular { grid-area: popular; }
+  .popular h2{
+    font-size: 20px;
+  }
+  
+  .footer { grid-area: footer; display: flex;gap: 50px ; align-items: center; }
+  .footer img {
+     width: 50%;
+   }
+  .footer h2{
+    font-size: 5px;
+    color: white;
+    
+     }
+      
+
+  
+}
+
+

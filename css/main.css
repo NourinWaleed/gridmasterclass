@@ -1,0 +1,299 @@
+:root {
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.center-el-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction:  column;
+}
+
+.main-title {
+  font-family: "Arvo", serif;
+  max-width: 220px;
+  font-weight: 400;
+}
+
+.link-with-arrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #FFC80A;
+}
+
+.sub-title {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  color: #9fa3a7;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: center;
+  background-color: #f7f8f9;
+  padding: 50px 0;
+}
+
+.header h1 {
+  line-height: 1.4em;
+  font-weight: 400;
+  font-family: "Arvo", serif;
+
+  font-size: calc(25px + 2vw);
+}
+
+.header a {
+  color: #27b9c2;
+}
+
+.mobile {
+  padding: 40px 20px 0px;
+}
+
+.mobile h2 , 
+.tv h2
+{
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.mobile p {
+  color: #9FA396;
+}
+
+.mobile img {
+  width: 80%;
+  margin: auto;
+}
+
+
+.keyboard {
+  background-color: #E15035;
+  padding: 40px 0px;
+  text-align: center;
+/*  */
+  color: white;
+
+  
+}
+
+.keyboard img {
+  width: 100%;
+}
+
+
+.game {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #F7F8F9;
+}
+
+.game img {
+  width: 80%;
+  margin: auto;
+}
+.game a {
+  color: #27b9c2;
+}
+
+.tv {
+  padding: 60px 10px;
+}
+
+.tv img{
+  width: 100%;
+}
+
+.tv p {
+  color: gray;
+}
+
+.tv a {
+  color: #27b9c2;
+}
+
+.twitter {
+  text-align: center;
+  background-color: #38D5F4;
+  padding: 60px 0px;
+}
+.twitter img {
+  max-width: 60px;
+  margin: 0px auto;
+}
+
+.twitter h2 {
+  margin-bottom: 0;
+}
+
+.content {
+  background-color: #35CFED;
+  border-radius: 50%;
+  aspect-ratio: 1/ 1 ;
+ 
+  color: white;
+
+  
+}
+
+.lab {
+  background-color: #93B6B7;
+  padding: 30px;
+
+  
+}
+
+.lab h2 {
+  text-align: center;
+
+
+  margin: 20px auto;
+}
+
+.badge {
+
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #7BC424;
+  color: white;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.imgs {
+ 
+  position: relative;
+}
+
+.imgs img {
+  width: 100%;
+}
+
+.imgs img:last-child {
+  width: 80%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+
+.cd {
+  text-align: center;
+  color: white;
+  background-color: #8F76BC;
+  padding: 60px 30px;
+}
+
+
+.cd .content {
+  background-color: #8166B0;
+}
+.content img {
+  width: 70%;
+  margin: 10px auto;
+}
+
+ .btn {
+
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: yellow;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cd .content .badge:first-child {
+  display: flex;
+  align-items: center;
+}
+.cd .content .badge:first-child::before {
+  content:  '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+ 
+
+  background-image: url(../imgs/grid-assignmnet/flag.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.popular {
+  text-align: center;
+  padding: 40px;
+}
+
+.footer {
+  background-color: #2C2C2C;
+  padding: 0 20px 30px;
+  color: white;
+  text-align: center;
+}
+
+.footer img {
+  width: 80%;
+  margin: auto;
+}
+
+/* !linear-grediant */
+/* !box-shadow text*/
+/* !absolute  */
+/* !relative  rem em %*/
+
+/* !object fit*/
+.box {
+  font-size: 1rem;
+  padding: 1.25rem;
+  margin: 3.125rem auto;
+  width: 50%;
+  min-height: vh;
+
+
+  background-color: lightblue;
+  box-shadow: -40px -40px white , -40px -40px 0px 20px red;
+}
+
+div {
+  font-size: 2em;
+}
+
+img {
+  
+  width: 900px;
+  height: 400px ;
+
+  object-fit: fill;
+  object-position:  right ;
+}
